@@ -1,6 +1,7 @@
 #Coin Toss App
 
 import random
+import time
 
 #Welcome message
 print(F"Welcome to Coin Toss App")
@@ -12,6 +13,7 @@ see_results = input("Would you like to see the results of each flip(y/n): ").low
 
 print(f"\nFlipping!!!\n")
 
+start_time = time.time()
 count_heads = 0
 count_tails = 0
 
@@ -39,3 +41,5 @@ print(f"\nResults of Flipping A Coin {total_flips} Times:")
 print(f"\nSide\t\tCount\t\tPercentage")
 print(f"Heads\t\t{count_heads}/{total_flips}\t\t{percent_heads}%")
 print(f"Tails\t\t{count_tails}/{total_flips}\t\t{percent_tails}%")
+
+print(f"\nTime elapsed: {time.time() - start_time} seconds.")
